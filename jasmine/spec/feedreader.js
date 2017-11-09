@@ -85,8 +85,8 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous TODO/DONE() function.
          */
-        beforeEach(function(TODO/DONE) {
-            loadFeed(0, TODO/DONE);
+        beforeEach(function(done) {
+            loadFeed(0, done);
         });
 
         it('are present', function() {
@@ -102,12 +102,12 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-        beforeEach(function(TODO/DONE) {
+        beforeEach(function(done){
             loadFeed(0, function() {
                 // store old feed
                 oldFeed = $('.feed').html();
                 // fetch newer feed
-                loadFeed(1, TODO/DONE);
+                loadFeed(1, done);
             });
         });
 
