@@ -18,4 +18,4 @@ In this project you will find:
 
 ## How to run the app
 
-You can clone it or download the zip, you must be open the index.html in your browser.
+You can clone it or download the zip, you must open the index.html in your browser.
